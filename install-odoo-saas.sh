@@ -38,24 +38,24 @@
  export CLONE_ODOO=${CLONE_ODOO:-"no"}
 
  ## E-Mail
- export EMAIL_SERVER=${EMAIL_SERVER:-stmp.example.com}
- export EMAIL_USER=${EMAIL_USER:-mail@example.com}
- export EMAIL_PASS=${EMAIL_PASS:-GiveMeYourPassBaby}
+ export EMAIL_SERVER=${EMAIL_SERVER:-smtp.ezing.cn}
+ export EMAIL_USER=${EMAIL_USER:-support@ezing.cn}
+ export EMAIL_PASS=${EMAIL_PASS:-eZingMe123}
 
  ## PostgreSQL
  export DB_PASS=${DB_PASS:-`< /dev/urandom tr -dc A-Za-z0-9 | head -c${1:-32};echo;`}
 
  ## Odoo
- export ODOO_DOMAIN=${ODOO_DOMAIN:-odoo.example.com}
- export ODOO_DATABASE=${ODOO_DATABASE:-odoo.example.com}
+ export ODOO_DOMAIN=${ODOO_DOMAIN:-i.ezing.cn}
+ export ODOO_DATABASE=${ODOO_DATABASE:-i.ezing.cn}
  export ODOO_USER=${ODOO_USER:-odoo}
  export ODOO_BRANCH=${ODOO_BRANCH:-9.0}
  export ODOO_MASTER_PASS=${ODOO_MASTER_PASS:-`< /dev/urandom tr -dc A-Za-z0-9 | head -c${1:-12};echo;`}
 
  ## Nginx
  export NGINX_SSL=${NGINX_SSL:-"no"}
- export SSL_CERT=${SSL_CERT:-/etc/ssl/certs/XXXX.crt}
- export SSL_KEY=${SSL_KEY:-/etc/ssl/private/XXXX.key}
+ export SSL_CERT=${SSL_CERT:-/etc/ssl/certs/ezing_nc.crt}
+ export SSL_KEY=${SSL_KEY:-/etc/ssl/private/ezing-nc-private.key}
 
  ## wkhtmltopdf
  # check version of your OS and download appropriate package
