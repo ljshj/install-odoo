@@ -121,7 +121,7 @@
      #apt-get -y install -f --no-install-recommends
      #apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false npm
      #rm -rf /var/lib/apt/lists/* wkhtmltox.deb
-    
+     apt-get -f install
      apt-get install -y xfonts-base xfonts-75dpi
      apt-get -f install
      
