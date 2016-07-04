@@ -43,14 +43,14 @@
  export EMAIL_PASS=${EMAIL_PASS:-eZingMe123}
 
  ## PostgreSQL
- export DB_PASS=${DB_PASS:-`< /dev/urandom tr -dc A-Za-z0-9 | head -c${1:-32};echo;`}
+ export DB_PASS=${DB_PASS:-"kku81gb"}
 
  ## Odoo
  export ODOO_DOMAIN=${ODOO_DOMAIN:-ezing.cn}
  export ODOO_DATABASE=${ODOO_DATABASE:-ezing.cn}
  export ODOO_USER=${ODOO_USER:-odoo}
  export ODOO_BRANCH=${ODOO_BRANCH:-9.0}
- export ODOO_MASTER_PASS=${ODOO_MASTER_PASS:-`< /dev/urandom tr -dc A-Za-z0-9 | head -c${1:-12};echo;`}
+ export ODOO_MASTER_PASS=${ODOO_MASTER_PASS:-"kku81gb"}
 
  ## Nginx
  export NGINX_SSL=${NGINX_SSL:-"no"}
