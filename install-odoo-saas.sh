@@ -114,7 +114,7 @@
      then
          curl -o wkhtmltox.deb -SL ${WKHTMLTOPDF_DEB_URL}
      else
-         curl -o wkhtmltox.deb -SL http://nightly.odoo.com/extra/wkhtmltox-0.12.1.2_linux-jessie-amd64.deb \
+         curl -o wkhtmltox.deb -SL http://download.gna.org/wkhtmltopdf/0.12/0.12.2.1/wkhtmltox-0.12.2.1_linux-trusty-amd64.deb \
          && echo '40e8b906de658a2221b15e4e8cd82565a47d7ee8 wkhtmltox.deb' | sha1sum -c - || echo 'cannot download wkhtmltox.deb'
      fi
      dpkg --force-depends -i wkhtmltox.deb
