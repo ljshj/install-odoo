@@ -130,7 +130,7 @@
      rm -rf /var/lib/apt/lists/* odoo.deb
      apt-get purge -y odoo
 
-     apt-get install python-psycogreen
+     #apt-get install python-psycogreen
      # requirements.txt
      #apt-get install -y postgresql-server-dev-all python-dev  build-essential libxml2-dev libxslt1-dev 
      #cd $ODOO_SOURCE_DIR
