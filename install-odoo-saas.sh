@@ -118,7 +118,7 @@
          && echo '40e8b906de658a2221b15e4e8cd82565a47d7ee8 wkhtmltox.deb' | sha1sum -c - || echo 'cannot download wkhtmltox.deb'
      fi
      dpkg --force-depends -i wkhtmltox.deb
-     apt-get install -y xfonts-base xfonts-75dpi libjpeg62-turbo
+     apt-get install -y xfonts-base xfonts-75dpi
      apt-get -y install -f --no-install-recommends
      apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false npm
      rm -rf /var/lib/apt/lists/* wkhtmltox.deb
