@@ -46,8 +46,8 @@
  export DB_PASS=${DB_PASS:-`< /dev/urandom tr -dc A-Za-z0-9 | head -c${1:-32};echo;`}
 
  ## Odoo
- export ODOO_DOMAIN=${ODOO_DOMAIN:-i.ezing.cn}
- export ODOO_DATABASE=${ODOO_DATABASE:-i.ezing.cn}
+ export ODOO_DOMAIN=${ODOO_DOMAIN:-ezing.cn}
+ export ODOO_DATABASE=${ODOO_DATABASE:-ezing.cn}
  export ODOO_USER=${ODOO_USER:-odoo}
  export ODOO_BRANCH=${ODOO_BRANCH:-9.0}
  export ODOO_MASTER_PASS=${ODOO_MASTER_PASS:-`< /dev/urandom tr -dc A-Za-z0-9 | head -c${1:-12};echo;`}
@@ -130,7 +130,7 @@
      rm -rf /var/lib/apt/lists/* odoo.deb
      apt-get purge -y odoo
 
-     #apt-get install python-psycogreen
+     apt-get install python-psycogreen
      # requirements.txt
      #apt-get install -y postgresql-server-dev-all python-dev  build-essential libxml2-dev libxslt1-dev 
      #cd $ODOO_SOURCE_DIR
