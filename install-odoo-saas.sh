@@ -90,7 +90,7 @@
 
  if [[ "$INIT_NGINX" == "yes" ]] || [[ "$INIT_START_SCRIPTS" != "no" ]]
  then
-     apt-get install -y emacs23-nox || apt-get install -y emacs24-nox
+     apt-get install -y emacs23-nox
      # moreutils is installed for sponge util
      apt-get install -y moreutils tree
  fi
@@ -109,18 +109,18 @@
              python-renderpm \
              python-support
 
-     ## wkhtmltopdf
-     if [[ "$WKHTMLTOPDF_DEB_URL" != "" ]]
-     then
-         curl -o wkhtmltox.deb -SL ${WKHTMLTOPDF_DEB_URL}
-     else
-         curl -o wkhtmltox.deb -SL http://download.gna.org/wkhtmltopdf/0.12/0.12.2.1/wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
-     fi
-     dpkg --force-depends -i wkhtmltox.deb
-     apt-get install -y xfonts-base xfonts-75dpi
-     apt-get -y install -f --no-install-recommends
-     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false npm
-     rm -rf /var/lib/apt/lists/* wkhtmltox.deb
+     ## wkhtmltopdf    ljs
+     #if [[ "$WKHTMLTOPDF_DEB_URL" != "" ]]
+     #then
+     #    curl -o wkhtmltox.deb -SL ${WKHTMLTOPDF_DEB_URL}
+     #else
+     #    curl -o wkhtmltox.deb -SL http://download.gna.org/wkhtmltopdf/0.12/0.12.2.1/wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
+     #fi
+     #dpkg --force-depends -i wkhtmltox.deb
+     #apt-get install -y xfonts-base xfonts-75dpi
+     #apt-get -y install -f --no-install-recommends
+     #apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false npm
+     #rm -rf /var/lib/apt/lists/* wkhtmltox.deb
 
      # install dependencies and delete odoo deb package:
      curl -o odoo.deb -SL http://nightly.odoo.com/9.0/nightly/deb/odoo_9.0.latest_all.deb
