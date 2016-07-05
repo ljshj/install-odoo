@@ -40,7 +40,7 @@
  ## E-Mail
  export EMAIL_SERVER=${EMAIL_SERVER:-smtp.ezing.cn}
  export EMAIL_USER=${EMAIL_USER:-support@ezing.cn}
- export EMAIL_PASS=${EMAIL_PASS:-eZingMe123}
+ export EMAIL_PASS=${EMAIL_PASS:-eZingMe1237}
 
  ## PostgreSQL
  export DB_PASS=${DB_PASS:-"kku81gb"}
